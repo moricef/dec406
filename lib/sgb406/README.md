@@ -64,18 +64,22 @@ Sur un téléphone il faut s'attendre à plus.
 
 ## Fichiers de test
 
-`sgb_firmin_20261026T195027Z_*s.sigmf-data` : trois salves reçues le
-26 octobre 2026 à environ 80 km de Toulouse, avec une RTL-SDR (R820T) sur
-antenne omnidirectionnelle. SigMF `ci16_le`, 2,4576 MS/s, centré sur
-406,050 MHz, 3 s par fichier (2,5 s pour le dernier). La salve est vers
-406,047 MHz et commence environ 1 s après le début du fichier. Ce sont les
-octets de la clé convertis en entiers 16 bits, sans autre traitement.
+`sgb_firmin_20261026T*.sigmf-data` : quatre salves reçues le 26 octobre 2026
+à environ 80 km de Toulouse, avec une RTL-SDR (R820T) sur antenne
+omnidirectionnelle. SigMF `ci16_le`, 2,4576 MS/s, centré sur 406,050 MHz,
+3 s par fichier, la salve commençant environ 1 s après le début du fichier.
+Ce sont les octets de la clé convertis en entiers 16 bits, sans autre
+traitement. La trame décodée et la fréquence de la salve sont dans
+l'annotation du fichier `.sigmf-meta`.
 
-Les trois contiennent la même balise système du CNES en auto-test :
+| Fichier | Fréquence | 23 Hex ID | TAC | Mode |
+|---|---|---|---|---|
+| `…195027Z_90s`, `…195027Z_240s` | 406,047 MHz | `9C97FFFE1A8F00000000000` | 65535 | auto-test |
+| `…211313Z_16s` | 406,045 MHz | `9C77FFFA18CF00000000000` | 65534 | auto-test |
+| `…211313Z_127s` | 406,054 MHz | `9C77FFFE1A7F00000000000` | 65535 | normal |
 
-    23 Hex ID   9C97FFFE1A8F00000000000
-    250 bits    BFFFE1A839095C63500B273E00000000001FFFF0FFFF7FFFEF4EEA43C6584D1
-    TAC 65535, pays 228, position 43.54849 N 1.39413 E
+Ce sont des balises système du CNES. Toutes se décodent sans erreur BCH, à
+2,4576 MS/s comme après rééchantillonnage à 1,92 MS/s pour les deux premières.
 
 Test sur PC :
 
