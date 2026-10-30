@@ -22,9 +22,7 @@ clean BCH result.
 
 The orbitography implementation also decodes the unprotected UTC calibration
 time defined by C/S T.006 instead of incorrectly treating those national-use
-bits as BCH-2. A technical article describing the decoder and its real-signal
-validation has been revised in response to the reviewers' comments and is
-awaiting the ARRL publication's final decision.
+bits as BCH-2.
 
 **Branch**: `main`
 
