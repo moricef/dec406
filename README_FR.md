@@ -21,8 +21,8 @@ décodés avec un BCH sans erreur.
 Le décodage d'orbitographie restitue également l'heure UTC de calibration non
 protégée définie par C/S T.006, au lieu de traiter à tort ces bits d'usage
 national comme un BCH-2. Un article technique décrivant le décodeur et sa
-validation sur signaux réels est actuellement en cours d'examen par une revue
-de l'ARRL.
+validation sur signaux réels a été corrigé en réponse aux remarques du comité
+de lecture et attend la décision finale de la revue de l'ARRL.
 
 **Branche** : `main`
 
