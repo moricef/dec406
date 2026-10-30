@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-archive_url="https://github.com/moricef/Decode_sarsat_406_v1g_v2g/releases/download/real-sgb-samples-20261026/real_sgb_firmin_20261026.zip"
+archive_url="https://github.com/moricef/dec406/releases/download/real-sgb-samples-20261026/real_sgb_firmin_20261026.zip"
 archive_sha256="37e88c9e445e33dd1c525d1fb5c53b94d2d93f2b5a2003d923010ad20be81299"
 sample_rel="onair-sgb-real/sgb_firmin_20261026T211313Z_127s.sigmf-data"
 expected_hex="9C77FFFE1A7F00000000000"

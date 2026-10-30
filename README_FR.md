@@ -14,7 +14,7 @@ de calibration, réparties dans quatre pays et quatre continents, ont été
 décodés avec un BCH sans erreur.
 
 [Compte rendu F4KLO](https://radiotelescopelavillette.wordpress.com/decodage-balises-sarsat/)
-· [Enregistrements IQ SGB réels et métadonnées SigMF](https://github.com/moricef/Decode_sarsat_406_v1g_v2g/releases/tag/real-sgb-samples-20261026)
+· [Enregistrements IQ SGB réels et métadonnées SigMF](https://github.com/moricef/dec406/releases/tag/real-sgb-samples-20261026)
 · [Détails de validation](docs/TESTS_VALIDATION.md)
 · [README anglais](README.md)
 
@@ -36,6 +36,9 @@ protégée définie par C/S T.006, au lieu de traiter à tort ces bits d'usage
 national comme un BCH-2.
 
 **Branche** : `main`
+
+Le dépôt a été renommé `dec406` ; les liens utilisant l'ancien nom
+`Decode_sarsat_406_v1g_v2g` redirigent toujours vers cette page.
 
 ---
 

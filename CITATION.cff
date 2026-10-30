@@ -8,8 +8,8 @@ authors:
     alias: F4MLV
 version: "10.2"
 date-released: 2026-10-30
-url: "https://github.com/moricef/Decode_sarsat_406_v1g_v2g"
-repository-code: "https://github.com/moricef/Decode_sarsat_406_v1g_v2g"
+url: "https://github.com/moricef/dec406"
+repository-code: "https://github.com/moricef/dec406"
 license: MIT
 keywords:
   - COSPAS-SARSAT

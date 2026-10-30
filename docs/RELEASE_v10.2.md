@@ -37,7 +37,7 @@ Independent field report and MEOSAR reception:
 https://radiotelescopelavillette.wordpress.com/decodage-balises-sarsat/
 
 Real IQ recordings:
-https://github.com/moricef/Decode_sarsat_406_v1g_v2g/releases/tag/real-sgb-samples-20261026
+https://github.com/moricef/dec406/releases/tag/real-sgb-samples-20261026
 
 This release provides source archives. Build instructions and SDR dependency
 requirements are in the README. No precompiled binaries are supplied.

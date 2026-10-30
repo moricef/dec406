@@ -16,7 +16,7 @@ calibration beacons in four countries on four continents were decoded with a
 clean BCH result.
 
 [F4KLO field report](https://radiotelescopelavillette.wordpress.com/decodage-balises-sarsat/)
-· [Real SGB IQ recordings and SigMF metadata](https://github.com/moricef/Decode_sarsat_406_v1g_v2g/releases/tag/real-sgb-samples-20261026)
+· [Real SGB IQ recordings and SigMF metadata](https://github.com/moricef/dec406/releases/tag/real-sgb-samples-20261026)
 · [Validation details](docs/TESTS_VALIDATION.md)
 · [French README](README_FR.md)
 
@@ -38,11 +38,14 @@ bits as BCH-2.
 
 **Branch**: `main`
 
+Repository renamed to `dec406`; links using the former
+`Decode_sarsat_406_v1g_v2g` name continue to redirect here.
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Language: C](https://img.shields.io/badge/Language-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![Platform: Linux](https://img.shields.io/badge/Platform-Linux-green.svg)](#)
-[![GitHub last commit](https://img.shields.io/github/last-commit/moricef/Decode_sarsat_406_v1g_v2g)](https://github.com/moricef/Decode_sarsat_406_v1g_v2g/commits/main)
-[![GitHub stars](https://img.shields.io/github/stars/moricef/Decode_sarsat_406_v1g_v2g?style=social)](https://github.com/moricef/Decode_sarsat_406_v1g_v2g/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/moricef/dec406)](https://github.com/moricef/dec406/commits/main)
+[![GitHub stars](https://img.shields.io/github/stars/moricef/dec406?style=social)](https://github.com/moricef/dec406/stargazers)
 
 ---
 
