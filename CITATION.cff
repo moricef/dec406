@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use dec406, please cite this software."
+type: software
+title: "dec406: COSPAS-SARSAT FGB and SGB SDR beacon decoder"
+authors:
+  - family-names: Morel
+    given-names: Fabrice
+    alias: F4MLV
+version: "10.2"
+date-released: 2026-10-30
+url: "https://github.com/moricef/Decode_sarsat_406_v1g_v2g"
+repository-code: "https://github.com/moricef/Decode_sarsat_406_v1g_v2g"
+license: MIT
+keywords:
+  - COSPAS-SARSAT
+  - SDR
+  - FGB
+  - SGB
+  - DSSS
+  - OQPSK
+  - MEOSAR
