@@ -18,6 +18,19 @@ décodés avec un BCH sans erreur.
 · [Détails de validation](docs/TESTS_VALIDATION.md)
 · [README anglais](README.md)
 
+![SGB réelle reçue par radio et décodée par dec406](https://i0.wp.com/radiotelescopelavillette.wordpress.com/wp-content/uploads/2026/07/decodage_sgb_self_test.png?ssl=1)
+
+Pour reproduire toute la chaîne de réception sur l'enregistrement IQ réel
+publié :
+
+```bash
+make demo-real-sgb
+```
+
+La commande télécharge la capture, vérifie son SHA-256, puis réalise
+l'acquisition, le désétalement, la validation BCH et le décodage des champs.
+Voir [la procédure de démonstration sur signal réel](docs/REAL_SIGNAL_DEMO.md).
+
 Le décodage d'orbitographie restitue également l'heure UTC de calibration non
 protégée définie par C/S T.006, au lieu de traiter à tort ces bits d'usage
 national comme un BCH-2.

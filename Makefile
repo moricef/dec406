@@ -43,9 +43,12 @@ ifneq ($(wildcard $(UTILS_DIR)/generate_2g_hex.c),)
 TARGETS += $(BUILD_DIR)/generate_2g_hex
 endif
 
-.PHONY: all clean check_deps help
+.PHONY: all clean check_deps help demo-real-sgb
 
 all: check_deps $(TARGETS)
+
+demo-real-sgb:
+	sh scripts/demo_real_sgb.sh
 
 # Check dependencies
 check_deps:
@@ -188,6 +191,7 @@ help:
 	@echo "  check_deps       - Check if dependencies are installed"
 	@echo "  install-deps     - Install required dependencies (requires sudo)"
 	@echo "  help             - Show this help message"
+	@echo "  demo-real-sgb    - Download and decode a published real SGB IQ recording"
 	@echo ""
 	@echo "Executables:"
 	@echo "  dec406_hex       - FGB decoder from hex string"

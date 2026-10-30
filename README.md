@@ -20,6 +20,18 @@ clean BCH result.
 · [Validation details](docs/TESTS_VALIDATION.md)
 · [French README](README_FR.md)
 
+![Real over-the-air SGB decoded by dec406](https://i0.wp.com/radiotelescopelavillette.wordpress.com/wp-content/uploads/2026/07/decodage_sgb_self_test.png?ssl=1)
+
+Reproduce the complete receive chain on the published real IQ recording:
+
+```bash
+make demo-real-sgb
+```
+
+This downloads the sample, verifies its SHA-256, then performs acquisition,
+despreading, BCH validation and field decoding. See
+[the real-signal demonstration notes](docs/REAL_SIGNAL_DEMO.md).
+
 The orbitography implementation also decodes the unprotected UTC calibration
 time defined by C/S T.006 instead of incorrectly treating those national-use
 bits as BCH-2.
