@@ -6,6 +6,25 @@ beacons at 406 MHz.
 Supports COSPAS-SARSAT 406 MHz FGB/1G and SGB/2G beacon decoding from IQ
 recordings and SDR receivers.
 
+**Validated on real signals, not only on synthetic test vectors.** The decoder
+has been exercised on direct 406 MHz reception, CNES system/calibration
+beacons, and the 1544 MHz MEOSAR downlink. An independent validation at the
+F4KLO La Villette radiotelescope decoded real SGB traffic received with an
+Airspy at 2.5 Msps and located the Larnaca calibration beacon within a few
+metres. Across two F4KLO captures, 23 SGB messages from seven system or
+calibration beacons in four countries on four continents were decoded with a
+clean BCH result.
+
+[F4KLO field report](https://radiotelescopelavillette.wordpress.com/decodage-balises-sarsat/)
+· [Real SGB IQ recordings and SigMF metadata](https://github.com/moricef/Decode_sarsat_406_v1g_v2g/releases/tag/real-sgb-samples-20261026)
+· [Validation details](docs/TESTS_VALIDATION.md)
+· [French README](README_FR.md)
+
+The orbitography implementation also decodes the unprotected UTC calibration
+time defined by C/S T.006 instead of incorrectly treating those national-use
+bits as BCH-2. A technical article describing the decoder and its real-signal
+validation is currently under review by an ARRL publication.
+
 **Branch**: `main`
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

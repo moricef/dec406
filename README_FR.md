@@ -3,6 +3,27 @@
 Décodeur pour balises de détresse COSPAS-SARSAT de 1re génération (FGB) et
 2e génération (SGB) à 406 MHz.
 
+**Validé sur des signaux réels, et pas uniquement sur des vecteurs de test
+synthétiques.** Le décodeur a été utilisé en réception directe à 406 MHz, sur
+les balises système et de calibration du CNES, ainsi que sur la liaison
+descendante MEOSAR à 1544 MHz. Une validation indépendante au radiotélescope
+F4KLO de La Villette a décodé des SGB réelles reçues avec un Airspy à
+2,5 Méch/s et localisé la balise de calibration de Larnaca à quelques mètres.
+Sur deux captures F4KLO, 23 messages SGB provenant de sept balises système ou
+de calibration, réparties dans quatre pays et quatre continents, ont été
+décodés avec un BCH sans erreur.
+
+[Compte rendu F4KLO](https://radiotelescopelavillette.wordpress.com/decodage-balises-sarsat/)
+· [Enregistrements IQ SGB réels et métadonnées SigMF](https://github.com/moricef/Decode_sarsat_406_v1g_v2g/releases/tag/real-sgb-samples-20261026)
+· [Détails de validation](docs/TESTS_VALIDATION.md)
+· [README anglais](README.md)
+
+Le décodage d'orbitographie restitue également l'heure UTC de calibration non
+protégée définie par C/S T.006, au lieu de traiter à tort ces bits d'usage
+national comme un BCH-2. Un article technique décrivant le décodeur et sa
+validation sur signaux réels est actuellement en cours d'examen par une revue
+de l'ARRL.
+
 **Branche** : `main`
 
 ---
